@@ -6,8 +6,8 @@ on:
 
 env:
   SERVICE_NAME: addmember
-  RESOURCE_GROUP: rg-microservicios
-  IMAGE_BASE_NAME: aminespinoza/addmember:latest
+  RESOURCE_GROUP: microservicios
+  IMAGE_BASE_NAME: juanpgar/addmember:latest
   ENVIRONMENT_NAME: env-microservicios
 
 jobs:
