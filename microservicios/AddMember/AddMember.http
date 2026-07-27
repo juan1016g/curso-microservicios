@@ -6,7 +6,7 @@ Accept: application/json
 
 ###
 
-POST {{AddMember_HostAddress}}/addmember?name=Oscarr2&lastname=Garcia&birthyear=1966
+POST {{AddMember_HostAddress}}/addmember?name=kevin&lastname=Suarez&birthyear=1995
 Content-Type: application/json
 Accept: application/json
 

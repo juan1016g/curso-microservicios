@@ -1,37 +1,44 @@
-  services:
-    addmember:
-      image: addmember
-      build:
-        context: ./AddMember
-        dockerfile: Dockerfile
-      ports:
-        - 8080:8080
-    pickage:
-      image: pickage
-      build:
-        context: ./PickAge
-        dockerfile: Dockerfile
-    addadult:
-      image: addadult
-      build:
-        context: ./AddAdult
-        dockerfile: Dockerfile
-    addchild:
-      image: addchild
-      build:
-        context: ./AddChild
-        dockerfile: Dockerfile
-    getAdults:
-      image: getadults
-      build:
-        context: ./GetAdults
-        dockerfile: Dockerfile
-      ports:
-        - "5000:8080"
-    getChildren: 
-      image: getchildren
-      build:
-        context: ./GetChildren
-        dockerfile: Dockerfile
-      ports:
-        - "5001:8080"
+version: '3.8'
+
+services:
+  addmember:
+    image: juanpgar/addmember:latest
+    build:
+      context: ./AddMember
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
+  pickage:
+    image: juanpgar/pickage:latest
+    build:
+      context: ./PickAge
+      dockerfile: Dockerfile
+
+  addadult:
+    image: juanpgar/addadult:latest
+    build:
+      context: ./AddAdult
+      dockerfile: Dockerfile
+
+  addchild:
+    image: juanpgar/addchild:latest
+    build:
+      context: ./AddChild
+      dockerfile: Dockerfile
+
+  getadults:
+    image: juanpgar/getadults:latest
+    build:
+      context: ./GetAdults
+      dockerfile: Dockerfile
+    ports:
+      - "5000:8080"
+
+  getchildren:
+    image: juanpgar/getchildren:latest
+    build:
+      context: ./GetChildren
+      dockerfile: Dockerfile
+    ports:
+      - "5001:8080"
