@@ -8,7 +8,7 @@ env:
   SERVICE_NAME: addmember
   RESOURCE_GROUP: microservicios
   IMAGE_BASE_NAME: juanpgar/addmember:latest
-  ENVIRONMENT_NAME: env-microservicios
+  ENVIRONMENT_NAME: managedEnvironment-microservicios-aa66
 
 jobs:
   AddMember:
