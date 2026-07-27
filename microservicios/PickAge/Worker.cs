@@ -1,4 +1,4 @@
-using Azure.Messaging.ServiceBus;
+﻿using Azure.Messaging.ServiceBus;
 
 namespace PickAge
 {
@@ -11,8 +11,8 @@ namespace PickAge
 
         public Worker(IConfiguration configuration)
         {
-            _connectionString = configuration["ServiceBus:ConnectionString"] ?? Environment.GetEnvironmentVariable("SERVICEBUS_CONNECTION_STRING");
-            _queueName = configuration["ServiceBus:QueueName"] ?? Environment.GetEnvironmentVariable("SERVICE_BUS_QUEUE_NAME");
+            _connectionString = configuration["ServiceBus:ConnectionString"];
+            _queueName = configuration["ServiceBus:QueueName"];
             _client = new ServiceBusClient(_connectionString);
             _processor = _client.CreateProcessor(_queueName, new ServiceBusProcessorOptions());
         }
@@ -30,7 +30,9 @@ namespace PickAge
         private async Task MessageHandler(ProcessMessageEventArgs args)
         {
             string body = args.Message.Body.ToString();
+
             await CreateAndSendTopic(body);
+
             Console.WriteLine($"Mensaje recibido: {body}");
 
             await args.CompleteMessageAsync(args.Message);
@@ -75,5 +77,7 @@ namespace PickAge
                 await topicClient.SendMessageAsync(message);
             }
         }
-    }    
+
+
+    }
 }

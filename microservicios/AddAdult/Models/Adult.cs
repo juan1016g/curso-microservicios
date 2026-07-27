@@ -1,4 +1,4 @@
-namespace AddAdult.Models
+﻿namespace AddAdult.Models
 {
     public class Adult
     {

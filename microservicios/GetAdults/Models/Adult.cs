@@ -1,4 +1,4 @@
-namespace GetAdults.Models
+﻿namespace GetAdults.Models
 {
     public class Adult
     {
