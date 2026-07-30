@@ -1,22 +1,22 @@
-name: GetAdult deployment
+name: GetChild deployment
 
 on:
   push:
     branches: [ "main" ]
 
 env:
-  SERVICE_NAME: getadults
+  SERVICE_NAME: getchildren
   RESOURCE_GROUP: microservicios
-  IMAGE_BASE_NAME: juanpgar/getadults:latest
+  IMAGE_BASE_NAME: juanpgar/getchildren:latest
   ENVIRONMENT_NAME: managedEnvironment-microservicios-aa66
 
 jobs:
   AddMember:
-    name: Get Adults deployment
+    name: Get Children deployment
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ${{ github.workspace }}/microservicios/GetAdults
+        working-directory: ${{ github.workspace }}/microservicios/GetChildren
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3

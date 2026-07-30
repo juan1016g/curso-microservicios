@@ -19,7 +19,7 @@ Host.CreateDefaultBuilder(args)
        services.AddHostedService<Worker>();
        services.AddDbContext<DataContext>(
            options => options.UseSqlServer(
-               configuration.GetConnectionString("DefaultConnection") ?? 
+                configuration.GetConnectionString("DefaultConnection") ?? 
                 Environment.GetEnvironmentVariable("SQL_CONNECTION_STRING")
             )
         );

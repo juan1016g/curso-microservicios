@@ -6,9 +6,9 @@ on:
 
 env:
   SERVICE_NAME: addchild
-  RESOURCE_GROUP: rg-microservicios
-  IMAGE_BASE_NAME: aminespinoza/addchild:latest
-  ENVIRONMENT_NAME: env-microservicios
+  RESOURCE_GROUP: microservicios
+  IMAGE_BASE_NAME: juanpgar/addchild:latest
+  ENVIRONMENT_NAME: managedEnvironment-microservicios-aa66
 
 jobs:
   AddMember:

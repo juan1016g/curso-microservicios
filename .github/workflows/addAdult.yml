@@ -6,9 +6,9 @@ on:
 
 env:
   SERVICE_NAME: addadult
-  RESOURCE_GROUP: rg-microservicios
-  IMAGE_BASE_NAME: aminespinoza/addadult:latest
-  ENVIRONMENT_NAME: env-microservicios
+  RESOURCE_GROUP: microservicios
+  IMAGE_BASE_NAME: juanpgar/addadult:latest
+  ENVIRONMENT_NAME: managedEnvironment-microservicios-aa66
 
 jobs:
   AddMember:

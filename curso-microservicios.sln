@@ -19,7 +19,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetAdults", "microservicios
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{90B3B8E0-B84C-4A73-927C-8CE2112CFA61}"
 	ProjectSection(SolutionItems) = preProject
+		.github\workflows\addAdult.yml = .github\workflows\addAdult.yml
+		.github\workflows\addChild.yml = .github\workflows\addChild.yml
 		microservicios\docker-compose.yml = microservicios\docker-compose.yml
+		.github\workflows\getadult.yml = .github\workflows\getadult.yml
+		.github\workflows\getchildren.yml = .github\workflows\getchildren.yml
+		.github\workflows\main.yml = .github\workflows\main.yml
+		.github\workflows\pickage.yml = .github\workflows\pickage.yml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetChildren", "microservicios\GetChildren\GetChildren.csproj", "{FC4E8953-348A-7A70-1296-3281C89CC272}"

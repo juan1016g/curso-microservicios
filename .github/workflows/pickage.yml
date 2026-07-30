@@ -6,9 +6,9 @@ on:
 
 env:
   SERVICE_NAME: pickage
-  RESOURCE_GROUP: rg-microservicios
-  IMAGE_BASE_NAME: aminespinoza/pickage:latest
-  ENVIRONMENT_NAME: env-microservicios
+  RESOURCE_GROUP: microservicios
+  IMAGE_BASE_NAME: juanpgar/pickage:latest
+  ENVIRONMENT_NAME: managedEnvironment-microservicios-aa66
 
 jobs:
   AddMember:
